@@ -1,0 +1,18 @@
+@b well {
+  position: relative;
+  padding: $space-md;
+
+  word-wrap: break-word;
+  background-color: $colorGrayLight;
+  border-radius: $radius-small;
+
+  @m border-dashed {
+    background: $white;
+    border: 4px dashed $colorGrayLight;
+  }
+
+  @e header {
+    font-weight: 600;
+    color: $colorBlack;
+  }
+}

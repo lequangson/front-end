@@ -1,0 +1,54 @@
+doctype html
+html.no-js(lang='')
+  head
+    meta(charset='utf-8')
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0')
+    title test project
+    // Place favicon.ico in the root directory
+
+    // build:css styles/vendor.css
+    // bower:css
+    // endbower
+    // endbuild
+
+    // build:css styles/main.css
+    link(rel="stylesheet", href="styles/main.css")
+    // endbuild
+
+    // build:js scripts/vendor/modernizr.js
+    script(src="/bower_components/modernizr/modernizr.js")
+    // endbuild
+
+    link(rel="apple-touch-icon", href="apple-touch-icon.png")
+
+    // Google fonts
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&subset=vietnamese,latin-ext")
+
+    // FontAwesome
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+
+    // build:css styles/main.css
+    link(rel="stylesheet", href="styles/main.css")
+    // endbuild
+
+    // build:js scripts/vendor/modernizr.js async
+    script(src="/bower_components/modernizr/modernizr.js")
+    // endbuild
+  body
+    //if lt IE 10
+      p.browserupgrade
+        | You are using an
+        strong outdated
+        |  browser. Please
+        a(href='http://browsehappy.com/') upgrade your browser
+        |  to improve your experience.
+
+    .backdrop
+      .container-detail
+        block content
+
+ 
+    // build:js scripts/main.js
+    script(src="scripts/main.js")
+    // endbuild

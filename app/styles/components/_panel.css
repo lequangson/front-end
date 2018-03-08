@@ -1,0 +1,58 @@
+@b test-panel {
+  background-color: $white;
+  border: 1px solid $color-light-gray;
+  border-radius: $radius-small;
+
+  @e header {
+    padding: $space-sm $space-md;
+
+    border-bottom: 1px solid $color-light-gray;
+  }
+
+  @e title {
+    margin-bottom: 0;
+
+    font-size: $font-size-h4;
+    font-weight: 700;
+  }
+
+  @e body {
+    padding: $space-sm $space-md;
+  }
+
+  @m danger {
+    border-color: $color-danger;
+
+    .test-panel__header {
+      background-color: $color-danger;
+    }
+
+    .test-panel__title {
+      color: $white;
+    }
+  }
+
+  @m warning {
+    border-color: $color-warning;
+
+    .test-panel__header {
+      background-color: $color-warning;
+    }
+
+    .test-panel__title {
+      color: $white;
+    }
+  }
+
+  @m success {
+    border-color: $color-success;
+
+    .test-panel__header {
+      background-color: $color-success;
+    }
+
+    .test-panel__title {
+      color: $white;
+    }
+  }
+}

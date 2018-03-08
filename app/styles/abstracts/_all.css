@@ -1,0 +1,119 @@
+/* Table of contents */
+
+/*
+ *  1. Global
+ *  2. Colors
+ *  3. Typography
+ *  4. Space
+ *  5. Decorate
+ *
+ */
+
+/* 1. Global */
+$base: 14px;
+$type-scale: 1.25;
+$line-height-base: 1.4;
+$nav-width: 280px;
+$container-width: 1400px;
+$transition-time: 0.25s;
+$transition-effect: ease-in;
+
+/* 2. Colors */
+$mine-shaft: #2a2a2a;
+$white: #fff;
+$chambray: #3a539b;
+$parsley: #134d13;
+$colorGreen: #78c752;
+$colorGrayLight: #f0f0f0;
+
+$colorOrange: #eba05e;
+$colorYellow: #f5e25f;
+
+$colorPink: #f21a65;
+$colorPinkMedium: #f7776a;
+$colorPinkLight: #f7c9c9;
+$azalea: #fbe1e2;
+
+$grenadier: #d43900;
+$bright-red: #f34635;
+$colorTextLight: #899096;
+/* $bossanova: #532f61; */ /* stylelint-disable-line */
+$razzmatazz: #f21a65;
+$colorBlack: #000;
+
+$alabaster: #f7f7f7;
+$pacific-blue: #09c;
+$san-marino: #4c71b5;
+
+$color-facebook: #3b5999;
+
+$color-primary: $chambray;
+$color-secondary: $mine-shaft;
+/* $color-info: $pacific-blue; */ /* stylelint-disable-line */
+$color-info: $san-marino;
+$color-success: $parsley;
+$color-warning: $grenadier;
+$color-danger: $bright-red;
+
+$color-pink: $razzmatazz;
+$color-gray: color($alabaster shade(30%));
+$color-light-gray: color($alabaster shade(5%));
+
+$body-bg: $white;
+$body-color: $mine-shaft;
+$link-color: $chambray;
+
+$message-bg: color($alabaster shade(1%));
+/* $my-message-bg: $pacific-blue; */ /* stylelint-disable-line */
+$my-message-bg: $san-marino;
+
+$noti-bg: $color-pink;
+
+/* 3. Typography */
+$font-sans-serif: "Source Sans Pro", sans-serif;
+
+/* $font-serif: Bitter, serif; */
+
+$font-special: Damion, cursive; /* This is optional, remove if nessesary */
+
+$font-family-body: $font-sans-serif;
+$font-family-heding: $font-serif;
+
+$font-size-h1: calc($base * $type-scale * $type-scale * $type-scale * $type-scale);
+$font-size-h2: calc($base * $type-scale * $type-scale * $type-scale);
+$font-size-h3: calc($base * $type-scale * $type-scale);
+$font-size-h4: calc($base * $type-scale);
+$font-size-h5: $base;
+$font-size-h6: calc($base / $type-scale);
+$font-size-base: $base;
+
+$font-weight-base: 400;
+
+/* 4. Space */
+$space-xs: calc($base / 4);
+$space-sm: calc($base / 2);
+$space-md: $base;
+$space-lg: calc($base * 2);
+$space-xlg: calc($base * 4);
+
+/* 4. Decorate */
+$radius-small: 4px;
+$radius: calc($base / 2);
+$radius-big: $base;
+$radius-large-big: calc($base * 2);
+
+/* Media query: Breakpoint variables */
+$bpSmall: 768px;
+$bpMedium: 992px;
+$bpLarge: 1200px;
+
+/* Can't use var in custom media
+   Use px unit instead
+ */
+@custom-media --phone-up (min-width: 576px);
+@custom-media --small-up (min-width: 768px);
+@custom-media --medium-up (min-width: 992px);
+@custom-media --large-up (min-width: 1200px);
+
+/* Transition */
+$transition: all 0.2s ease-in-out-quad;

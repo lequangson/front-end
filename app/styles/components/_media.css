@@ -1,0 +1,42 @@
+@b test-media {
+  display: flex;
+  align-items: center;
+  padding: $space-md;
+
+  color: $body-color;
+
+  @e item {
+    @m 1 {
+      width: 60px;
+      margin-right: $space-sm;
+
+      > img { /* stylelint-disable-line */
+        size: 60px;
+      }
+    }
+
+    @m 2 {
+      flex: 1;
+      overflow: hidden;
+    }
+  }
+
+  @e loader-avatar {
+    size: 60px;
+
+    background: $color-light-gray;
+    border-radius: $radius-small;
+  }
+
+  @e loader-text {
+    size: 120px 10px;
+    margin-bottom: $space-sm;
+
+    background: $color-light-gray;
+    border-radius: $radius-small;
+
+    @m 1 {
+      width: 40px;
+    }
+  }
+}

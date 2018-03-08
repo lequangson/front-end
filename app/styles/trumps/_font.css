@@ -1,0 +1,89 @@
+.txt-left {
+  text-align: left;
+}
+
+.txt-center {
+  text-align: center;
+  justify-content: center;
+}
+
+.txt-right {
+  text-align: right;
+  justify-content: flex-end;
+}
+
+.txt-bold {
+  font-weight: 700;
+}
+
+.txt-thin {
+  font-weight: 400;
+}
+
+.txt-medium {
+  font-weight: 600;
+}
+
+.txt-italic {
+  font-style: italic;
+}
+
+.txt-xxxlg {
+  font-size: calc($base * 2.3);
+
+  @media (--small-up) {
+    font-size: calc($base * 3);
+  }
+}
+
+.txt-xxlg {
+  font-size: calc($base * 2);
+}
+
+.txt-xlg {
+  font-size: calc($base * 1.563);
+}
+
+.txt-lg {
+  font-size: calc($base * 1.17);
+}
+
+.txt-sm {
+  font-size: calc($base * 0.83);
+}
+
+.txt-xs {
+  font-size: calc($base * 0.5);
+}
+
+.txt-uppercase {
+  text-transform: uppercase;
+}
+
+.txt-underline {
+  text-decoration: underline;
+}
+
+.txt-green {
+  color: $parsley;
+}
+
+.txt-blue {
+  color: $san-marino;
+}
+
+.txt-white {
+  color: $white;
+}
+
+.txt-light {
+  color: $colorTextLight;
+}
+
+.txt-red {
+  color: $bright-red;
+}
+
+.txt-warning {
+  color: $colorOrange;
+}

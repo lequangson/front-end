@@ -1,0 +1,18 @@
+@b test-hr {
+  width: 100%;
+  margin-bottom: $space-xs;
+
+  font-weight: 700;
+  color: $color-gray;
+  text-align: center;
+
+  @e text {
+    margin: 0 $space-sm;
+  }
+}
+
+.test-seperate {
+  height: 4px;
+
+  background-color: $color-light-gray;
+}

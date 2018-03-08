@@ -1,0 +1,38 @@
+.backdrop {
+  min-height: 100%;
+
+  background: #dae2f8 linear-gradient(to right, #f7c9c9, #91a8d1);
+}
+
+.test-bordered {
+  border: 2px solid $color-info;
+}
+
+.test-radius {
+  border-radius: $radius-small;
+}
+
+.test-txt-large {
+  font-size: $font-size-h4;
+}
+
+.test-txt-bold {
+  font-weight: 700;
+}
+
+.test-txt-muted {
+  color: $color-gray;
+}
+
+.test-txt-color-info {
+  color: $color-info;
+}
+
+.svg-img {
+  size: 100%;
+}
+
+.full-width {
+  width: 100%;
+}
+

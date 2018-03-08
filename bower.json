@@ -1,0 +1,20 @@
+{
+  "name": "test",
+  "private": true,
+  "dependencies": {
+    "modernizr": "~2.8.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.1.2"
+  },
+  "version": "1.0.0",
+  "description": "project test by leson",
+  "main": "gulpfile.js",
+  "repository": {
+    "url": "?.git",
+    "type": "git"
+  },
+  "author": "leson",
+  "license": "MIT"
+}

@@ -1,0 +1,11 @@
+/* Fake recepient avatar */
+.img-ghost {
+  size: 30px;
+
+  background-color: $color-gray;
+  border-radius: 50%;
+}
+
+.cursor {
+  cursor: pointer;
+}

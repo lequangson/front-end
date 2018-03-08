@@ -1,0 +1,34 @@
+.test-nav#nav
+  .test-nav__main
+    a.test-media(href="#")
+      .test-media__item.test-media__item--1
+        img.test-bordered.test-radius(src="http://www.radfaces.com/images/avatars/linda-barret.jpg")
+      .test-media__item.test-media__item--2
+        div Tran Quan Hy<br>23 tuổi - Ho Chi Minh
+
+    .test-nav__hr
+
+    ul.test-list-underline
+      li
+        label.test-media.mbzero
+          input.test-media__item.mrmd(type="checkbox")
+          .test-media__item Nhận thông báo
+
+      li
+        a.test-media(href="#")
+          i.fa.fa-sign-out.test-media__item.mrmd
+          .test-media__item
+            | Đăng xuất
+
+    .test-nav__hr
+
+    ul.test-list-ec
+      li: a(href="#") Giới thiệu
+      li: a(href="#") Điều khoản
+      li: a(href="#") Bảo mật
+      li: a(href="#") Trợ giúp
+      li: a(href="#") Liên hệ
+      li: a(href="#") Blog
+
+  .test-nav__ghost#overlay
+  button.test-nav__close#closeBtn: i.fa.fa-times.fa-lg
