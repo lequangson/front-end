@@ -11,6 +11,7 @@
 
 /* 1. Global */
 $base: 14px;
+$gutter: 15px;
 $type-scale: 1.25;
 $line-height-base: 1.4;
 $nav-width: 280px;
@@ -19,56 +20,12 @@ $transition-time: 0.25s;
 $transition-effect: ease-in;
 
 /* 2. Colors */
-$mine-shaft: #2a2a2a;
-$white: #fff;
-$chambray: #3a539b;
-$parsley: #134d13;
-$colorGreen: #78c752;
-$colorGrayLight: #f0f0f0;
 
-$colorOrange: #eba05e;
-$colorYellow: #f5e25f;
-
-$colorPink: #f21a65;
-$colorPinkMedium: #f7776a;
-$colorPinkLight: #f7c9c9;
-$azalea: #fbe1e2;
-
-$grenadier: #d43900;
-$bright-red: #f34635;
-$colorTextLight: #899096;
-/* $bossanova: #532f61; */ /* stylelint-disable-line */
-$razzmatazz: #f21a65;
-$colorBlack: #000;
-
-$alabaster: #f7f7f7;
-$pacific-blue: #09c;
-$san-marino: #4c71b5;
-
-$color-facebook: #3b5999;
-
-$color-primary: $chambray;
-$color-secondary: $mine-shaft;
-/* $color-info: $pacific-blue; */ /* stylelint-disable-line */
-$color-info: $san-marino;
-$color-success: $parsley;
-$color-warning: $grenadier;
-$color-danger: $bright-red;
-
-$color-pink: $razzmatazz;
-$color-gray: color($alabaster shade(30%));
-$color-light-gray: color($alabaster shade(5%));
-
-$body-bg: $white;
-$body-color: $mine-shaft;
-$link-color: $chambray;
-
-$message-bg: color($alabaster shade(1%));
-/* $my-message-bg: $pacific-blue; */ /* stylelint-disable-line */
-$my-message-bg: $san-marino;
-
-$noti-bg: $color-pink;
-
+$color-primary: #21252b;
+$color-secondary: #282c34;
+$body-color: #474747;
+$body-bg: #fff;
+$link-color: #44aaff;
 /* 3. Typography */
 $font-sans-serif: "Source Sans Pro", sans-serif;
 

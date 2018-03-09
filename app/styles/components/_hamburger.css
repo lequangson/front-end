@@ -1,0 +1,18 @@
+@import "../../node_modules/hamburgers/dist/hamburgers";
+
+.hamburger {
+  padding-left: 0;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.hamburger-inner {
+  background-color: $color-primary;
+
+  &::before,
+  &::after {
+    background-color: $color-primary;
+  }
+}

@@ -1,57 +1,98 @@
-.test-nav {
-  &.is-show {
-    .test-nav__main,
-    .test-nav__close {
-      transform: translateX(0);
-    }
-
-    .test-nav__ghost {
-      visibility: visible;
-      opacity: 1;
-    }
-  }
+.nav {
+  z-index: 20;
+  flex-grow: 1;
 
   &__main {
-    position: fixed 0 0 0 auto;
-    z-index: 10;
-
-    width: $nav-width;
-
-    background-color: $white;
-
-    transition: transform $transition-time $transition-effect;
-    transform: translateX($nav-width);
-  }
-
-  &__ghost {
-    position: fixed 0;
-    z-index: 2;
-
-    visibility: hidden;
-    background-color: rgba($colorBlack, 0.5);
-    opacity: 0;
-
-    transition: opacity $transition-time $transition-effect;
-  }
-
-  &__close {
     position: fixed;
-    top: $space-sm;
-    right: calc($space-sm + $nav-width);
-    z-index: 10;
+    top: 130px;
+    bottom: 0;
+    left: 0;
+    overflow-y: auto;
 
-    color: $white;
+    width: 300px;
+    padding: $space-lg $gutter;
 
-    background-color: transparent;
-    border: 0;
+    background-color: rgba($body-bg, 0.9);
 
-    transition: transform $transition-time $transition-effect;
-    transform: translateX(calc($space-sm + $nav-width + 27px));
+    transition: transform 0.5s ease-out-quart;
+    transform: translateX(-100%);
+    will-change: transform;
+
+    &.is-show {
+      transform: translateX(0);
+    }
   }
 
-  &__hr {
-    height: $space-md;
+  &__logo {
+    display: none;
+    margin-bottom: $space-lg;
 
-    background-color: $color-light-gray;
+    @media (--small-up) {
+      display: block;
+    }
+  }
+
+  &__link {
+    display: block;
+    margin-bottom: $space-md;
+
+    color: $color-primary;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  @media (--small-down) {
+    display: flex;
+    flex: 100%;
+    justify-content: space-between;
+  }
+
+  @media (--desktop-screen) {
+    .hamburger {
+      display: none;
+    }
+
+    &__main {
+      position: inherit;
+
+      display: flex;
+      align-items: center;
+      width: auto;
+      padding: 0 $space-sm 0 0;
+      margin-right: $space-lg;
+
+      background-color: transparent;
+      transform: none;
+    }
+
+    &__logo {
+      flex-grow: 1;
+      margin-bottom: 0;
+    }
+
+    &__link {
+      display: inline-block;
+      margin-bottom: 0;
+
+      font-size: $font-size-h4;
+      font-weight: 600;
+      color: $color-white;
+      text-shadow: $text-shadow;
+
+      &.l2 {
+        color: $color-primary;
+        text-shadow: none;
+      }
+
+      &:not(:last-child) {
+        margin-right: $space-lg;
+      }
+    }
+  }
+}
+
+.lp__logo {
+  @media (--small-up) {
+    display: none;
   }
 }
