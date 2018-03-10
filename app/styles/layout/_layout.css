@@ -2,6 +2,7 @@
   max-width: $container-width;
   min-height: 100vh;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 /* Align items center vertycal and hozizantal */
@@ -10,7 +11,6 @@
   justify-content: center;
   align-items: center;
 }
-
 
 /* Display flex */
 .l-flex {

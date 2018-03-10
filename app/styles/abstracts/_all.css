@@ -23,12 +23,18 @@ $transition-effect: ease-in;
 $color-white: #fff;
 $color-yellow: #5a5b10;
 $color-light-blue: #f8fcfd;
+$color-purple: #503562;
+$color-red: #712b36;
+$color-green: #7f9d67;
+$color-yellow: #644821;
 
 $color-primary: #21252b;
-$color-secondary: #282c34;
 $body-color: #474747;
-$link-color: #44aaff;
+$color-secondary: #282c34;
+$link-color: #4af;
+$colorBorder: #e1e1e1;
 $body-bg: $color-white;
+
 /* 3. Typography */
 $font-sans-serif: "Source Sans Pro", sans-serif;
 

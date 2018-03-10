@@ -3,5 +3,35 @@ extends layouts/default
 block content
 
   include include/header
-  include include/tab
+  //- include include/tab
+
+  .row
+    .col-12
+      h2 Table b
+
+      table.table.table--b
+        tbody
+          tr
+            th Text
+            th Text
+            th Text
+          tr
+            td.txt-light tro chuyen free
+            td.txt-light
+              i.fa.fa-check
+            td.txt-light
+              i.fa.fa-check
+          tr
+            td.txt-light tan luon
+            td.txt-light 1 lan
+            td.txt-light
+              i.fa.fa-times
+          tr
+            td(rowspan="2").table__special.table__special--1 Khuyen mai <br /> dac biet
+            td(rowspan="2").table__special.table__special--1 -
+            td.table__special.table__special--2 3 thang chi <br /> 450,000 VND
+          tr
+            td.table__special.table__special--3 6 thang 
+
+
   //- include include/navigation

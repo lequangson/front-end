@@ -1,4 +1,4 @@
 @b header {
-	padding: $space-md $space-xs; 
-	background-color: $color-primary;
+  padding: $space-md 0;
+  background-color: $color-primary;
 }

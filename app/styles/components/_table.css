@@ -1,0 +1,33 @@
+@b table {
+  /* stylelint-disable-line */
+  width: 100%;
+  min-width: 550px;
+
+  border-collapse: collapse;
+
+  td, th { /* stylelint-disable-line */
+    padding: 10px 8px;
+
+    text-align: center;
+
+    &:first-child {
+      width: 40%;
+    }
+
+    &:last-child {
+      width: 30%;
+    }
+  }
+
+  td { /* stylelint-disable-line */
+    border: 1px solid color($colorBorder a(90%));
+  }
+
+  tr:nth-of-type(2) > td { /* stylelint-disable-line */
+    border-top: 0;
+  }
+
+  th { /* stylelint-disable-line */
+    color: color($color-secondary blackness(50%));
+  }
+}

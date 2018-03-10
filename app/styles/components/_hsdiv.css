@@ -9,22 +9,19 @@
   background-color: $color-secondary;
 }
 
-.hsdiv::-webkit-scrollbar-track
-{
-  border-radius: 10px;
+.hsdiv::-webkit-scrollbar-track {
   background-color: #c9c9c9;
+  border-radius: 10px;
 }
 
-.hsdiv::-webkit-scrollbar
-{
-  border-radius: 10px;
+.hsdiv::-webkit-scrollbar {
   height: 0.5rem;
   background-color: #c9c9c9;
+  border-radius: 10px;
 }
 
-.hsdiv::-webkit-scrollbar-thumb
-{
-  border-radius: 10px;
-  background-color: #8d9399;
+.hsdiv::-webkit-scrollbar-thumb {
   width: 80%;
+  background-color: #8d9399;
+  border-radius: 10px;
 }

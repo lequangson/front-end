@@ -9,6 +9,8 @@
 
     padding: $space-md calc($base*2);
 
+    color: $color-white;
+    flex-direction: column;
     background-color: $color-primary;
   }
 
@@ -30,5 +32,11 @@
     &:hover {
       color: $color-yellow;
     }
+  }
+
+  @e title {
+    margin-bottom: $space-lg;
+    font-size: $font-size-h4;
+    font-weight: 600;
   }
 }

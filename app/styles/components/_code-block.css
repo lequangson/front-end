@@ -1,3 +1,4 @@
 @b code-container {
-	background-color: $color-secondary; 
+  flex: 1;
+  background-color: $color-secondary;
 }
