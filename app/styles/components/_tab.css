@@ -1,0 +1,34 @@
+@b tab {
+  position: relative;
+
+  background-color: $color-secondary;
+
+  @e content {
+    display: flex;
+    flex: 1;
+
+    padding: $space-md calc($base*2);
+
+    background-color: $color-primary;
+  }
+
+  @e link {
+    display: inline-block;
+    padding: $space-md calc($base*2);
+
+    font-weight: 600;
+    color: $color-white;
+    text-align: center;
+
+    border-bottom: 3px solid transparent;
+
+    &.active {
+      color: $color-yellow;
+      border-color: $color-yellow;
+    }
+
+    &:hover {
+      color: $color-yellow;
+    }
+  }
+}

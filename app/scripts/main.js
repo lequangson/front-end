@@ -12,8 +12,8 @@
 
 // nav tab
 ;(function() {
-  const tabLinks = document.querySelectorAll('.nav-1__link')
-  const tabContent = document.querySelectorAll('.nav-1__content')
+  const tabLinks = document.querySelectorAll('.tab__link')
+  const tabContent = document.querySelectorAll('.tab__content')
 
   function showTab(el) {
     for (let i = 0; i < tabLinks.length; i++) {

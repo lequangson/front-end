@@ -4,15 +4,15 @@
 
   &__main {
     position: fixed;
-    top: 130px;
+    top: 0;
     bottom: 0;
     left: 0;
     overflow-y: auto;
 
-    width: 300px;
+    width: 100%;
     padding: $space-lg $gutter;
 
-    background-color: rgba($body-bg, 0.9);
+    background-color: rgba($color-light-blue, 0.9);
 
     transition: transform 0.5s ease-out-quart;
     transform: translateX(-100%);
@@ -27,7 +27,7 @@
     display: none;
     margin-bottom: $space-lg;
 
-    @media (--small-up) {
+    @media (--medium-up) {
       display: block;
     }
   }
@@ -41,16 +41,8 @@
     text-decoration: none;
   }
 
-  @media (--small-down) {
-    display: flex;
-    flex: 100%;
-    justify-content: space-between;
-  }
-
-  @media (--desktop-screen) {
-    .hamburger {
-      display: none;
-    }
+  @media (--medium-up) {
+    display: none;
 
     &__main {
       position: inherit;
@@ -88,11 +80,5 @@
         margin-right: $space-lg;
       }
     }
-  }
-}
-
-.lp__logo {
-  @media (--small-up) {
-    display: none;
   }
 }

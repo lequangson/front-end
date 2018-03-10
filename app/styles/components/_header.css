@@ -1,0 +1,4 @@
+@b header {
+	padding: $space-md $space-xs; 
+	background-color: $color-primary;
+}

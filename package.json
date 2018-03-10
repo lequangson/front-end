@@ -71,7 +71,7 @@
   "author": "leson",
   "license": "MIT",
   "dependencies": {
-    "hamburgers": "^0.9.3",
+    "hamburgers": "^0.7.0",
     "normalize.css": "^5.0.0"
   }
 }

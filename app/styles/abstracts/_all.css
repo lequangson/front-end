@@ -20,12 +20,15 @@ $transition-time: 0.25s;
 $transition-effect: ease-in;
 
 /* 2. Colors */
+$color-white: #fff;
+$color-yellow: #5a5b10;
+$color-light-blue: #f8fcfd;
 
 $color-primary: #21252b;
 $color-secondary: #282c34;
 $body-color: #474747;
-$body-bg: #fff;
 $link-color: #44aaff;
+$body-bg: $color-white;
 /* 3. Typography */
 $font-sans-serif: "Source Sans Pro", sans-serif;
 
@@ -69,6 +72,7 @@ $bpLarge: 1200px;
  */
 @custom-media --phone-up (min-width: 576px);
 @custom-media --small-up (min-width: 768px);
+@custom-media --medium-down (min-width: 991px);
 @custom-media --medium-up (min-width: 992px);
 @custom-media --large-up (min-width: 1200px);
 

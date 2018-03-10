@@ -2,8 +2,6 @@
   max-width: $container-width;
   min-height: 100vh;
   margin: 0 auto;
-
-  /*background-color: $body-bg;*/
 }
 
 /* Align items center vertycal and hozizantal */
@@ -13,3 +11,75 @@
   align-items: center;
 }
 
+
+/* Display flex */
+.l-flex {
+  display: flex;
+}
+
+.l-flex--ac {
+  align-items: center;
+}
+
+/* Display */
+.l-flex-grow {
+  display: flex;
+
+  > :first-child {
+    flex-grow: 1;
+  }
+}
+
+.l-flex-item-grow {
+  flex-grow: 1;
+}
+
+/* Align items center and distribute equally */
+.l-flex-ce {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Align items center and distribute space around */
+.l-flex-cspa {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* Align items center and distribute equally */
+.l-flex-sb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Align items center and distribute space around */
+.l-flex-sa {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* Align items center vertycal */
+.l-flex-v-c {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+
+  > *:not(.frame) {
+    flex: 100%;
+  }
+}
+
+/* Align items center vertical and distribute space around */
+.l-flex-v-sp {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+
+  > *:not(.frame) {
+    flex: 100%;
+  }
+}

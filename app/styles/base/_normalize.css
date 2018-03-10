@@ -1,1 +1,6 @@
 @import "../../../node_modules/normalize.css/normalize.css";
+
+code {
+	font-weight: 600;
+	color: $color-white;
+}
