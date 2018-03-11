@@ -1,33 +1,33 @@
 @b table {
   /* stylelint-disable-line */
+  display: block;
   width: 100%;
-  min-width: 550px;
 
+  font-weight: 600;
+  text-align: left;
+  white-space: normal;
   border-collapse: collapse;
 
   td, th { /* stylelint-disable-line */
+    width: 20%;
     padding: 10px 8px;
-
-    text-align: center;
-
-    &:first-child {
-      width: 40%;
-    }
+    border: 1px solid $colorBorder;
 
     &:last-child {
-      width: 30%;
+      width: 100px;
     }
   }
 
-  td { /* stylelint-disable-line */
-    border: 1px solid color($colorBorder a(90%));
-  }
+  @m 1 {
+    td { /* stylelint-disable-line */
+      width: 40%;
+      padding: 10px 8px;
+      vertical-align: baseline;
+      border: 0;
 
-  tr:nth-of-type(2) > td { /* stylelint-disable-line */
-    border-top: 0;
-  }
-
-  th { /* stylelint-disable-line */
-    color: color($color-secondary blackness(50%));
+      &:last-child {
+        width: 60%;
+      }
+    }
   }
 }

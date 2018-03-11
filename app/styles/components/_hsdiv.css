@@ -1,12 +1,9 @@
 /* Horizontal scroll div */
 
 .hsdiv {
-  padding: $base $base 0;
   overflow-x: auto;
 
   white-space: nowrap;
-
-  background-color: $color-secondary;
 }
 
 .hsdiv::-webkit-scrollbar-track {

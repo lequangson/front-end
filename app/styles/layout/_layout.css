@@ -83,3 +83,32 @@
     flex: 100%;
   }
 }
+
+@media (--medium-up) {
+  .col-lg-odder-1 {
+    order: 1;
+  }
+
+  .col-lg-odder-2 {
+    order: 2;
+  }
+
+  @col-lg-hidden {
+    display: none;
+  }
+}
+
+.wrap-aside {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  background-color: $color-primary;
+}
+
+.wrap-nav {
+  display: none;
+
+  @media (--medium-up) {
+    display: flex;
+    background-color: $color-light-blue;
+  }
+}

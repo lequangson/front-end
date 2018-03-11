@@ -22,18 +22,23 @@ $transition-effect: ease-in;
 /* 2. Colors */
 $color-white: #fff;
 $color-yellow: #5a5b10;
-$color-light-blue: #f8fcfd;
+$color-blue: #44a9fe;
+$color-light-blue: #f9fcfd;
 $color-purple: #503562;
-$color-red: #712b36;
-$color-green: #7f9d67;
-$color-yellow: #644821;
+$color-red: #f92672;
+$color-green: #a3e765;
+$color-yellow: #ef9f45;
 
 $color-primary: #21252b;
 $body-color: #474747;
 $color-secondary: #282c34;
-$link-color: #4af;
+$link-color: #3a72c7;
 $colorBorder: #e1e1e1;
 $body-bg: $color-white;
+
+$colorTextLight: #9fa4a6;
+$colorOrange: #f46228;
+$colorPurple: #c678dd;
 
 /* 3. Typography */
 $font-sans-serif: "Source Sans Pro", sans-serif;
@@ -61,6 +66,7 @@ $space-sm: calc($base / 2);
 $space-md: $base;
 $space-lg: calc($base * 2);
 $space-xlg: calc($base * 4);
+$space-xxlg: calc($base * 6);
 
 /* 4. Decorate */
 $radius-small: 4px;
@@ -78,7 +84,7 @@ $bpLarge: 1200px;
  */
 @custom-media --phone-up (min-width: 576px);
 @custom-media --small-up (min-width: 768px);
-@custom-media --medium-down (min-width: 991px);
+@custom-media --medium-down (max-width: 991px);
 @custom-media --medium-up (min-width: 992px);
 @custom-media --large-up (min-width: 1200px);
 

@@ -21,8 +21,8 @@ html {
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 7px;
+  padding-left: 7px;
 }
 
 @media (min-width: 576px) {
@@ -137,8 +137,8 @@ html {
 }
 
 .no-gutters {
-  margin-right: 0;
-  margin-left: 0;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
 }
 
 .no-gutters > .col,

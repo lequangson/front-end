@@ -3,35 +3,95 @@ extends layouts/default
 block content
 
   include include/header
-  //- include include/tab
 
-  .row
-    .col-12
-      h2 Table b
-
-      table.table.table--b
-        tbody
-          tr
-            th Text
-            th Text
-            th Text
-          tr
-            td.txt-light tro chuyen free
-            td.txt-light
-              i.fa.fa-check
-            td.txt-light
-              i.fa.fa-check
-          tr
-            td.txt-light tan luon
-            td.txt-light 1 lan
-            td.txt-light
-              i.fa.fa-times
-          tr
-            td(rowspan="2").table__special.table__special--1 Khuyen mai <br /> dac biet
-            td(rowspan="2").table__special.table__special--1 -
-            td.table__special.table__special--2 3 thang chi <br /> 450,000 VND
-          tr
-            td.table__special.table__special--3 6 thang 
-
-
-  //- include include/navigation
+  .container
+    .row
+      .col-lg-2.wrap-nav
+        include include/navigation
+      .col-12.col-lg-5.col-lg-odder-2.wrap-aside
+        include include/tab
+      .col-12.col-lg-5.mblg.col-lg-odder-1
+        h2 Digital goods
+        p Digital Goods API is mainly focused on selling In-game virtual items, services and premium membership with PayAlto.
+        h3 Stored widget call
+        p It shows a widget, where stored products in Products section of Merchant Account are available for payment. Both subscription and one-time payment are supported in our products section.
+        h3 Parameter:
+        .hsdiv  
+          table.table
+            tbody
+              tr
+                th Name
+                th Required
+                th Format
+                th Description
+              tr
+                td key
+                td yes
+                td String(32)
+                td 
+                  | Sample: 048c51f8fc834a1467db96b683f16e70<br /> Can be found in General Settings of the Project inside of your Merchant Account
+              tr
+                td uid
+                td yes
+                td String(64)
+                td
+                  | Sample: test@paymentwall.com<br />Not case-sensitive.<br />ID of the end-user in your system (usually it is an email) who is viewing the widget. The maximum length is 64.
+              tr
+                td widget
+                td yes
+                td String
+                td
+                  | Sample: p1_1<br />Widget code. Can be obtained by Merchant Account -> Projects -><br />Widgets
+              tr
+                td email
+                td yes
+                td String
+                td
+                  |Sample: test@paymentwall.com<br />Paymentwall will automatically send a payment receipt to the user.
+              tr
+                td timestamp
+                td yes
+                td String(10)
+                td
+                  | Sample: 1477985778<br />Unix timestamp of the current date
+              tr
+                td sign_version
+                td yes
+                td String
+                td
+                  | Sample: 2, 3<br />Signature Version.
+              tr
+                td sign
+                td yes
+                td String
+                td
+                  | Sample: 7633c3b060fa2ddd41283ff<br />d4629ab40
+                  p Refer&nbsp;
+                   a(href="#") to Signature Calculation.
+        h3 Result:
+        p You will get a URL or iframe by widget object.
+        table.table.table--1
+          tbody
+            tr
+              td plan<br /> 
+                span.txt-light string
+              td Identifies the product ID, send back as <span class="txt-orange">goodsid</span> parametr <a href="#">inpingbacks.</a>eg: productax123
+             
+            tr
+              td period<br />required<br />string
+              td 
+                | day/week/month/year
+            tr
+              td 
+                | period_duration<br />
+                span.txt-red required<br />
+                span.txt-light string
+              td 
+                | Number of peroids mentioned the period parameter. By default minimum duration for recurring in 3 days. This can be adjusted by contacting
+                <a href="#"> devsupport@paymentwall.com
+  
+  .nav__main.js-nav
+    .l-flex-sb
+      a.btn(href="#") SIGN UP
+      a.nav__link.mbzero(href="#") Dont have a pw Account?
+    include include/navigation  

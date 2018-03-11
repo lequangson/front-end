@@ -1,4 +1,14 @@
 @b header {
   padding: $space-md 0;
   background-color: $color-primary;
+
+  @e right {
+    @media (--medium-down) {
+      display: none;
+    }
+  }
+
+  @media (--medium-up) {
+    padding: $space-md;
+  }
 }

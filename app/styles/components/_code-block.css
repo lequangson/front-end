@@ -1,4 +1,9 @@
 @b code-container {
   flex: 1;
+  padding: $space-md;
+  margin-bottom: $space-lg;
   background-color: $color-secondary;
+  @e content {
+    padding: $space-md;
+  }
 }

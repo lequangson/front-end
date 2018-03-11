@@ -1,5 +1,6 @@
 @b tab {
   position: relative;
+  padding: $base $base 0;
 
   background-color: $color-secondary;
 
@@ -7,9 +8,10 @@
     display: flex;
     flex: 1;
 
-    padding: $space-md calc($base*2);
+    padding: $space-md;
 
     color: $color-white;
+    word-wrap: break-word;
     flex-direction: column;
     background-color: $color-primary;
   }
@@ -35,7 +37,6 @@
   }
 
   @e title {
-    margin-bottom: $space-lg;
     font-size: $font-size-h4;
     font-weight: 600;
   }

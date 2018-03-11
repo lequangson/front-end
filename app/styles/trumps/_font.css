@@ -65,11 +65,11 @@
 }
 
 .txt-green {
-  color: $parsley;
+  color: $color-green;
 }
 
 .txt-blue {
-  color: $san-marino;
+  color: $color-blue;
 }
 
 .txt-white {
@@ -81,9 +81,17 @@
 }
 
 .txt-red {
-  color: $bright-red;
+  color: $color-red;
 }
 
-.txt-warning {
+.txt-orange {
   color: $colorOrange;
+}
+
+.txt-purple {
+  color: $colorPurple;
+}
+
+.txt-yellow {
+  color: $color-yellow;
 }

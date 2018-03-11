@@ -11,10 +11,44 @@
 		| Python
 
 .tab__content
-	.tab__title
-		| Libery
+	.tab__title Libery
+	p: a(href="#") https://github.com/paymentwall/paymentwall-java
+	.tab__title Request URL
+	p: a(href="#") https://api.paymentwall.com/api/subscription/
+	.tab__title Request method
+	p: a(href="#") https://api.paymentwall.com/api/subscription/
+	.tab__title.mbmd Initialize
 	.code-container 
-		code import
+		code import&nbsp;
+		span com.paymentwall.java.Base;
+		.code-container__content
+			div
+				span.txt-red Base.
+				span.txt-blue setAppKey
+				span.txt-green ("YOUR_APPLICATION_KEY");
+			div
+				span.txt-red Base.
+				span.txt-blue setAppKey
+				span.txt-green ("YOUR_SECRET_KEY");
+			div
+				span.txt-red Base.
+				span.txt-blue setApiType
+				span (
+				span.txt-red Base.
+				span.txt-yellow API_GOODS
+				span );
+
+	.tab__title.mbmd Result Example
+	.code-container 
+		.code-container__content
+			div
+				span.txt-red widget.
+				span.txt-blue getHtmlCode();
+	div 
+		span < iframe src="
+		a(href="#") 
+			|	https://api.paymentwall.com/api/subscription?uid=paymentwalltest&widget=p1_1&sign_version=3&sign=f05c73860fe07d37a4b04225b71e8157bfdacafb4a5259bd342db86098d201af&key=6e380d3e4954ef8296676f8a41cac692&email=test%40paymentwall.com&timestamp=1478057670
+		span "  width="750" frameborder="0" height="800">< /iframe>
 
 .tab__content.hide        
 	h3 Java

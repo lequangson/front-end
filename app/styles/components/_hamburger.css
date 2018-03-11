@@ -6,6 +6,17 @@
   &:focus {
     outline: none;
   }
+
+  $.is-active {  /* stylelint-disable */
+    .hamburger-inner {
+      background-color: $body-color !important;
+
+      &::before,
+      &::after {
+        background-color: $body-color !important;
+      }
+    }
+  }
 }
 
 .hamburger-inner {
